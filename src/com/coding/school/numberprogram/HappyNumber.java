@@ -1,4 +1,4 @@
-package com.coding.school;
+package com.coding.school.numberprogram;
 
 /*A happy number is a number defined by the following process:
 

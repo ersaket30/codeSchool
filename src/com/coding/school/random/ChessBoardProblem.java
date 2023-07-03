@@ -1,4 +1,4 @@
-package com.coding.school;
+package com.coding.school.random;
 
 public class ChessBoardProblem {
 
