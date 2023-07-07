@@ -15,11 +15,11 @@ public class CountPairsWithGivenSum {
         Set<Integer> mySet = new HashSet<>();
         int count = 0;
         for (Integer integer : array) {
-            mySet.add(integer);
             if (mySet.contains(sum - integer)) {
-                count = count + 1;
+                int second = sum - integer;
+                System.out.println("Pairs are: "+integer+ " : "+second );
             }
-
+            mySet.add(integer);
         }
 
         System.out.println("Pairs for given sum are/is "+count);

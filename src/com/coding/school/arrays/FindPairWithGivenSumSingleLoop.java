@@ -16,9 +16,8 @@ public class FindPairWithGivenSumSingleLoop {
             if(st.contains(sum-array[i])){
                 Integer number = sum-array[i];
                 System.out.println("Pair is "+number+ " "+array[i]);
-            }else {
-                st.add(array[i]);
             }
+            st.add(array[i]);
         }
     }
 }

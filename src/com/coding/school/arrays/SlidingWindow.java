@@ -23,9 +23,18 @@ public class SlidingWindow {
         // window and adding last element of
         // current window.
         int window_sum = max_sum;
-        for (int i = k; i < n; i++) {
+        /*for (int i = k; i < n; i++) {
             window_sum += arr[i] - arr[i - k];
             max_sum = Math.max(max_sum, window_sum);
+        }*/
+        int left = 0;
+        int right = k;
+
+        while (left<k ){
+            window_sum = window_sum + arr[right] - arr[left];
+            max_sum = Math.max(max_sum, window_sum);
+            right++;
+            left ++;
         }
 
         return max_sum;

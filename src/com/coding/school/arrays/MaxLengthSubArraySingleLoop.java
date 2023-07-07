@@ -1,5 +1,6 @@
 package com.coding.school.arrays;
 
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -8,6 +9,32 @@ public class MaxLengthSubArraySingleLoop {
         Integer[] array = new Integer[]{5,6,-5,5,3,5,3,-2,0};
         Integer givenSum = 8;
         findMaxLengthSubArraySingleLoop(array,givenSum);
+        findMaxLenghtWithSlidingWindow(array, givenSum);
+    }
+
+    private static void findMaxLenghtWithSlidingWindow(Integer[] array, int givenSum) {
+        int sum = 0;
+        int left = 0;
+        int length = -1;
+        int index = -1;
+        //Arrays.sort(array);
+        for (int i = 0; i < array.length; i++) {
+            sum += array[i];
+            while (sum>givenSum && left <i){
+                sum = sum - array[left];
+                left++;
+            }
+            while (sum==givenSum && left <= i){
+                sum = sum - array[left];
+                if(length < Math.max(length, i-left+1)){
+                    length = Math.max(length, i-left+1);
+                    index = i;
+                }
+                left++;
+            }
+        }
+        int startIndex = index-length+1;
+        System.out.println("Max length is "+startIndex + "..."+index );
     }
 
     private static void findMaxLengthSubArraySingleLoop(Integer[] array, Integer givenSum) {

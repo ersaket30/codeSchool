@@ -4,8 +4,7 @@ import java.util.Arrays;
 
 public class TwoSumProblem {
 
-    static void
-    hasArrayTwoCandidates(int A[], int arr_size, int sum)
+    static void hasArrayTwoCandidates(int A[], int arr_size, int sum)
     {
         int l, r;
 
@@ -32,8 +31,9 @@ public class TwoSumProblem {
     // Driver code
     public static void main(String args[])
     {
-        int A[] = { 1, 4, 45, 6, 10, -8,12,15,-29 };
-        int n = 16;
+        //int A[] = { 1, 4, 45, 6, 10, -8,12,15,-29 };
+        int A[] = { 1, 4, 6,7, 10};
+        int n = 8;
         int arr_size = A.length;
 
         // Function calling
