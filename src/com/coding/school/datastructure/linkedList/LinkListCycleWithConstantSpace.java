@@ -1,7 +1,5 @@
 package com.coding.school.datastructure.linkedList;
 
-import java.util.LinkedList;
-
 public class LinkListCycleWithConstantSpace {
 
     class Node{

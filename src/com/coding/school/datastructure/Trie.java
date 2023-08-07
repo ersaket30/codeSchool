@@ -5,7 +5,7 @@ import java.util.HashMap;
 class TrieHash {
 
     // implementing a HashMap
-    private HashMap<Character, HashMap> origin;
+    private final HashMap<Character, HashMap> origin;
 
     // implementing a zero-argument constructor
     public TrieHash()

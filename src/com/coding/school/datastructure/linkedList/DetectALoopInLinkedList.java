@@ -1,22 +1,21 @@
 package com.coding.school.datastructure.linkedList;
 
-import practice.datastructure.LinkedList;
-
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Set;
 
 public class DetectALoopInLinkedList {
     public static void main(String[] args) {
-        LinkedList llist = new LinkedList();
+        /*LinkedList llist = new LinkedList();
         llist.insert(20);
         llist.insert(4);
         llist.insert(15);
         llist.insert(10);
-        llist.head.next.next.next.next = llist.head;
-        containsLoop(llist);
+        llist.head.next.next.next.next = llist.head;*/
+        //containsLoop(llist);
     }
 
-    private static void containsLoop(LinkedList myLink) {
+    /*private static void containsLoop(LinkedList myLink) {
         Set<LinkedList.Node> myset = new HashSet<>();
         LinkedList.Node currentNode = myLink.head;
         LinkedList.Node previousNode = null;
@@ -32,5 +31,5 @@ public class DetectALoopInLinkedList {
             currentNode = currentNode.next;
         }
         myLink.display();
-    }
+    }*/
 }
